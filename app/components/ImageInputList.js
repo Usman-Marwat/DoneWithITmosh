@@ -21,6 +21,8 @@ function ImageInputList({ imageUris = [], onRemoveImage, onAddImage }) {
               />
             </View>
           ))}
+
+          {/*After these images we always wanna have an image input for adding a new image */}
           <ImageInput onChangeImage={(uri) => onAddImage(uri)} />
         </View>
       </ScrollView>
